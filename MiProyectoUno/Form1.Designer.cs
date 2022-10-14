@@ -33,6 +33,7 @@ namespace MiProyectoUno
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dgvFamilia = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFamilia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +45,6 @@ namespace MiProyectoUno
             this.Completar.TabIndex = 0;
             this.Completar.Text = "Completar";
             this.Completar.UseVisualStyleBackColor = true;
-            this.Completar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -74,11 +74,21 @@ namespace MiProyectoUno
             this.dgvFamilia.Size = new System.Drawing.Size(386, 426);
             this.dgvFamilia.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(571, 392);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvFamilia);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -97,6 +107,7 @@ namespace MiProyectoUno
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dgvFamilia;
+        private System.Windows.Forms.Button button1;
     }
 }
 
