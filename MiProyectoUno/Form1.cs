@@ -12,6 +12,9 @@ namespace MiProyectoUno
 {
     public partial class Form1 : Form
     {
+        Familia familia1 = new Familia();
+
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +22,7 @@ namespace MiProyectoUno
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Familia familia1 = new Familia();
+            
 
             dgvFamilia.DataSource = familia1.LlenarFamilia();
 
@@ -28,7 +31,9 @@ namespace MiProyectoUno
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string idfamilia = dgvFamilia.SelectedCells[0].Value.ToString();
 
+            familia1.EliminarFamilia(idfamilia);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -36,5 +41,9 @@ namespace MiProyectoUno
 
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
